@@ -435,6 +435,9 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .header__logo {
+    margin-left: 35px;
+  }
   .main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -453,6 +456,7 @@ body {
     background: url("../images/illustration-working.svg") top right no-repeat;
     background-size: contain;
     height: 40vh;
+    margin: auto 36px;
   }
   .main__paragraph {
     margin-left: 0;
@@ -548,6 +552,15 @@ body {
   .social {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .features__card--white:nth-child(3)::before {
+    width: 88.5px;
+  }
+  .features__card--white:nth-child(3)::after {
+    width: 88.5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -337,6 +337,11 @@ body {
     }
 }
 @media screen and (min-width: 1024px) {
+    .header {
+        &__logo {
+            margin-left: 35px;
+        }
+    }
     .main {
         display: flex;
         flex-direction: column;
@@ -347,6 +352,7 @@ body {
             background: url('../images/illustration-working.svg') top right no-repeat;
             background-size: contain;
             height: 40vh;
+            margin: auto 36px;
         }
         &__paragraph {
             margin-left: 0;
@@ -424,5 +430,15 @@ body {
     }
     .social {
         flex-basis: 100%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .features {
+        &__card--white:nth-child(3)::before {
+            width: 88.5px;
+        }
+        &__card--white:nth-child(3)::after {
+            width: 88.5px;
+        }
     }
 }
