@@ -358,4 +358,196 @@ body {
   color: #bfbfbf;
   text-decoration: none;
 }
+
+@media screen and (min-width: 425px) {
+  .features__icon {
+    top: -19%;
+    right: 37%;
+  }
+  .features__card--white:nth-child(3)::before {
+    top: -33.5%;
+    right: 48%;
+  }
+  .features__card--white:nth-child(3)::after {
+    bottom: -21%;
+    right: 48.5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__icon {
+    top: -25%;
+    right: 43%;
+  }
+  .features__card--white:nth-child(3)::before {
+    top: -43%;
+    right: 49%;
+  }
+  .features__card--white:nth-child(3)::after {
+    bottom: -27%;
+    right: 49%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    left: 0;
+    top: 0;
+  }
+  .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navigation__item {
+    margin-right: 1.5rem;
+  }
+  .navigation__item:nth-child(4) {
+    padding-top: 0;
+    width: auto;
+    border-top: 0;
+    margin: 1rem 1rem auto 15rem;
+  }
+  .navigation__item:last-child {
+    background-color: transparent;
+    padding: 0;
+  }
+  .navigation__link {
+    color: #bfbfbf;
+    font-size: 0.8rem;
+  }
+  .navigation__link--highlight {
+    color: #ffffff;
+    padding: 5px 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+    margin: 0 20px;
+  }
+  .main__wrapper {
+    background: url("../images/illustration-working.svg") top right no-repeat;
+    background-size: contain;
+    height: 40vh;
+  }
+  .main__paragraph {
+    margin-left: 0;
+  }
+  .image__wrapper {
+    display: none;
+  }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 50px;
+    background: url(../images/bg-shorten-desktop.svg) right top -30px no-repeat #3b3054;
+  }
+  .form__input {
+    width: 70%;
+  }
+  .form__button {
+    width: 20%;
+    margin: 0 1rem;
+  }
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .features__card {
+    margin-bottom: 0;
+  }
+  .features__card:first-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 50px;
+  }
+  .features__card--white {
+    width: 27%;
+    margin: 0 auto;
+    height: 260px;
+  }
+  .features__card--white:nth-child(3) {
+    top: 50px;
+  }
+  .features__card--white:last-child {
+    top: 100px;
+  }
+  .features__card--white:nth-child(3)::before {
+    top: 14%;
+    left: -23%;
+    height: 10px;
+    width: 64px;
+  }
+  .features__card--white:nth-child(3)::after {
+    top: 54%;
+    right: -23%;
+    height: 10px;
+    width: 64px;
+  }
+  .features__title:first-child {
+    font-size: 2rem;
+  }
+  .features__icon {
+    top: -20%;
+    left: 10%;
+  }
+  .cta {
+    background: url(../images/bg-boost-desktop.svg) top no-repeat #3b3054;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: left;
+  }
+  .social {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
