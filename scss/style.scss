@@ -1,0 +1,105 @@
+@import '_variables.scss';
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+    font-family: $fontfamily;
+    margin: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    &__logo {
+        width: 32px;
+        height: 32px;
+        align-self: center;
+    }
+}
+.hamburger {
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    &__box {
+        width: 30px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+    }
+    &__inner {
+        @include hamburger-line;
+        
+        content: '';
+        left: 0;
+        top: 50%;
+        transform: translateY(50%);
+        transition: background-color .3s .1s ease-in-out;
+    }
+    &__inner::before, &__inner::after {
+        @include hamburger-line;
+
+        content: '';
+        left: 0;
+        transition: transform .1s .2s ease-in;
+    }
+    &__inner::before {
+        top: -10px;
+    }
+    &__inner::after {
+        top: 10px;
+    }
+    &--active &__inner {
+        background-color: transparent;
+    }
+    &--active &__inner::before {
+        transform: translateY(10px) rotate(45deg);
+    }
+    &--active &__inner::after {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}
+.navigation {
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    text-align: center;
+    left: 1.1rem;
+    top: 6rem;
+    width: 91%;
+    box-shadow: $shadow;
+    font-size: $basesize;
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+    }
+    &__item {
+        margin: 1rem 0;
+    }
+    &__link {
+        text-decoration: none;
+        color: $darkblue;
+        font-family: $secondaryfont;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    &__item:last-child {
+        border-top: 1px solid $lightgrayishblue;
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+    &__item:last-child .navigation__link {
+        color: $grayishblue;
+    }
+    &--active {
+        display: flex;
+    }
+}
