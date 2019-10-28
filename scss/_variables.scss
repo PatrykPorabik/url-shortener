@@ -19,4 +19,10 @@ $fontfamily: 'Poppins', sans-serif;
     background-color: $grayishviolet;
     position: absolute;
 }
+@mixin cyan-line {
+    width: 10px;
+    background-color: $cyan;
+    height: 50px;
+    position: absolute;
+}
 $shadow: 0px 0px 10px 0px rgba(69,70,79,0.3);
